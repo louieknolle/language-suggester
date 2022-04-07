@@ -3,6 +3,10 @@
   margin-bottom: 20px;
 }
 
+.result {
+  display: none;
+}
+
 /* #formOne {
   display: flex;
   justify-content: space-between;
