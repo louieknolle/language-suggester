@@ -10,7 +10,7 @@ $(document).ready(function() {
 
 
     if (whichStack === 'Frontend developer' && experience === 'No experience') {
-      $('#formOne').hide();
+      // $('#formOne').hide();   //initially here
       $('#javaScript').fadeToggle();
     } else if (whichStack === 'Backend developer' && experience === 'Some experience' && cliffJump === 'No') {
       $('#ruby').fadeToggle();
@@ -21,5 +21,8 @@ $(document).ready(function() {
     } else {
       $('#python').fadeToggle();
     }
+
+    $('#formOne').hide();
+    $(('.jumbotron')).hide();
   });
 });

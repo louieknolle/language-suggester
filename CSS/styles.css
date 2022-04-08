@@ -38,14 +38,15 @@ button {
 .result {
   display: none;
   margin-top: 30px;
+  margin-bottom: 30px;
   color: #5988c5;
   font-size: 30px;
-  text-decoration: underline;
 }
 
 .imgContainer {
   display: flex;
   justify-content: center;
+  margin-bottom: 10px;
 }
 
 img {
@@ -54,7 +55,19 @@ img {
   border: solid 4px #25928d;
 }
 
+.result p.refresh:hover link {
+  text-decoration: none;
+  color:#25928d;
+}
 
+a:hover {
+  text-decoration: underline;
+  color: #25928d;
+}
+
+.refresh {
+  font-size: 40px;
+}
 
 p {
   text-align: center;
