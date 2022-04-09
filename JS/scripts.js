@@ -11,13 +11,13 @@ $(document).ready(function() {
     const age = parseInt($('#age').val());
     const dogCat = $('#dogCat').val();
 
-    if (whichStack === 'Frontend developer' && experience === 'No experience') {
+    if ((whichStack === 'front' && experience === 'no') || age < 26) {
       $('#javaScript').fadeToggle();
-    } else if (whichStack === 'Backend developer' && experience === 'Some experience' && cliffJump === 'No') {
+    } else if (whichStack === 'back' && experience === 'some' && cliffJump === 'no') {
       $('#ruby').fadeToggle();
-    } else if (whichStack === 'Full stack' || experience === 'Lots of experience') {
+    } else if (whichStack === 'full' || experience === 'lots') {
       $('#cSharp').fadeToggle();
-    } else if (cliffJump === 'Yes') {
+    } else if (cliffJump === 'yes' && dogCat === 'neither') {
       $('#swift').fadeToggle();
     } else {
       $('#python').fadeToggle();
