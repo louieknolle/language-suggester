@@ -12,33 +12,42 @@
       <div class="jumbotron jumbotron-fluid text-center">
         <h1>Which programming language should YOU learn?</h1>
         <p>
-          Whether you're interested in learning coding from the beginning or looking to add another language to your arsenal, our short quiz will help you decide what's the best new programming language you should learn!
+          Whether you're interested in learning coding from the beginning or
+          looking to add another language to your arsenal, our short quiz will
+          help you decide which new programming language you should learn next!
         </p>
       </div>
 
-      <form id="formOne">
-        <label for="stack">In what developer role do you picture yourself?</label>
+      <form id="programLanguageInputForm">
+        <label for="stack"
+          >In what developer role do you picture yourself?</label
+        >
         <select class="formControl" id="whichStack">
-          <option>Frontend developer</option>
-          <option>Backend Developer</option>
-          <option>Full stack</option>
+          <option value="front">Frontend developer</option>
+          <option value="back">Backend developer</option>
+          <option >Full stack</option>
         </select>
 
-        <label for="experience">What is your experience with programming at this time?</label>
+        <label for="experience"
+          >What is your experience with programming at this time?</label
+        >
         <select class="formControl" id="experience">
           <option>No experience</option>
           <option>Some experience</option>
           <option>Lots of experience</option>
         </select>
 
-        <label for="cliffJump">Have you ever gone cliff jumping from a height of at least 10 meters?</label>
+        <label for="cliffJump"
+          >Have you ever gone cliff jumping from a height of at least 10
+          meters?</label
+        >
         <select class="formControl" id="cliffJump">
           <option>Yes</option>
           <option>No</option>
         </select>
 
         <label for="age">How old are you?</label>
-        <input id="age" type="text" class="formControl"/>
+        <input id="age" type="text" class="formControl" />
 
         <label for="dogCat">Are you a dog person or a cat person?</label>
         <select class="formControl" id="dogCat">
@@ -51,41 +60,38 @@
         </div>
       </form>
 
-      <div class="result" id="javaScript">
-        <p>You should learn JavaScript!</p> 
-        <div class="imgContainer">
-          <img src="img/JS.jpg" alt="Javacript logo">
+      <div id="resultContainer">
+        <div class="result" id="javaScript">
+          <p>You should learn JavaScript!</p>
+          <div class="imgContainer">
+            <img src="img/JS.jpg" alt="Javacript logo" />
+          </div>
         </div>
-        <p class="refresh"><a href="index.html">Take the quiz again!</a></p>
-      </div>
-
-      <div class="result" id="python">
-        <p>You should learn Python!</p>
-        <div class="imgContainer">
-          <img src="img/python.jpg" alt="Python logo">
+        <div class="result" id="python">
+          <p>You should learn Python!</p>
+          <div class="imgContainer">
+            <img src="img/python.jpg" alt="Python logo" />
+          </div>
         </div>
-        <p class="refresh"><a href="index.html">Take the quiz again!</a></p>
-      </div>
-      <div class="result" id="swift">
-        <p>You should learn Swift!</p>
-        <div class="imgContainer">
-          <img src="img/swift.png" alt="Swift logo">
+        <div class="result" id="swift">
+          <p>You should learn Swift!</p>
+          <div class="imgContainer">
+            <img src="img/swift.png" alt="Swift logo" />
+          </div>
         </div>
-        <p class="refresh"><a href="index.html">Take the quiz again!</a></p>
-      </div>
-      <div class="result" id="cSharp">
-        <p>You should learn C#!</p>
-        <div class="imgContainer">
-          <img src="img/Csharp.png" alt="C-sharp logo">
+        <div class="result" id="cSharp">
+          <p>You should learn C#!</p>
+          <div class="imgContainer">
+            <img src="img/Csharp.png" alt="C-sharp logo" />
+          </div>
         </div>
-        <p class="refresh"><a href="index.html">Take the quiz again!</a></p>
-      </div>
-      <div class="result" id="ruby">
-        <p>You should learn Ruby!</p>
-        <div class="imgContainer">
-          <img src="img/ruby.jpeg" alt="Ruby logo">
+        <div class="result" id="ruby">
+          <p>You should learn Ruby!</p>
+          <div class="imgContainer">
+            <img src="img/ruby.jpeg" alt="Ruby logo" />
+          </div>
         </div>
-        <pclass="refresh"><a href="index.html">Take the quiz again!</a></p>
+        <p><a href="index.html">Take the quiz again!</a></p>
       </div>
     </div>
   </body>

@@ -23,6 +23,7 @@ select, input {
 button {
   background-color: #5988c5;
   color: #dddddd;
+  margin-bottom: 50px;
 }
 
 .formControl {
@@ -33,6 +34,10 @@ button {
 .btnContainer {
   display: flex;
   justify-content: center;
+}
+
+#resultContainer  {
+  display: none;
 }
 
 .result {

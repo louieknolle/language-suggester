@@ -1,16 +1,17 @@
 $(document).ready(function() {
-  $('form#formOne').submit(function(event) {
+  $('form#programLanguageInputForm').submit(function(event) {
     event.preventDefault();
+    
+    $('#resultContainer').hide();
     $('.result').hide();
+
     const whichStack = $('#whichStack').val();
     const experience = $('#experience').val();
     const cliffJump = $('#cliffJump').val();
     const age = parseInt($('#age').val());
     const dogCat = $('#dogCat').val();
 
-
     if (whichStack === 'Frontend developer' && experience === 'No experience') {
-      // $('#formOne').hide();   //initially here
       $('#javaScript').fadeToggle();
     } else if (whichStack === 'Backend developer' && experience === 'Some experience' && cliffJump === 'No') {
       $('#ruby').fadeToggle();
@@ -22,7 +23,8 @@ $(document).ready(function() {
       $('#python').fadeToggle();
     }
 
-    $('#formOne').hide();
+    $('#resultContainer').show();
+    $('#programLanguageInputForm').hide();
     $(('.jumbotron')).hide();
   });
 });
